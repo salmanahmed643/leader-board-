@@ -1,0 +1,384 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* cOmmon style */
+body {
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 870px;
+    background-color: #ffffff;
+    margin-top: 25px;
+    border-radius: 7px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* ------------------------------ NOTE header start ------------------------------ */
+header {
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_img a img {
+    width: 40.42px;
+    height: 51px;
+    margin-right: 16px;
+}
+
+.nev_text a {
+    text-decoration: none;
+}
+.nev_text a span {
+    color: #ffffff;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.nev_text a span:hover {
+    color: #d7d7d7;
+}
+
+/*  */
+
+
+.nav_right ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav_right ul li {
+    list-style: none;
+    margin-left: 20px;
+    transition: transform .4s ease;
+}
+
+.nav_right ul li:hover {
+    transform: scale(1.1);
+}
+
+.nav_right ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all .4s ease;
+}
+
+.nav_right ul li a:hover {
+    color: #d7d7d7;
+}
+
+.nav_right ul li img {
+    width: 90%;
+    border: 1px solid #f7f7f7;
+    border-radius: 50%;
+}
+/* ------------------------------- NOTE header end ------------------------------- */
+
+
+/* --------------------------- NOTE top player section start --------------------------- */
+.section_title {
+    margin: 0 0 40px;
+    font-size: 24px;
+    color: #562EFF;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;
+}
+.player {
+    display: flex;
+    align-items: center;
+}
+.player img {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform .4s ease, all ease-in .4s;
+}
+.player:hover img {
+    transform: scale(1.2) rotate(10deg);
+    border: 3px solid #562EFF;
+    border-radius: 50%;
+}
+.player a {
+    text-decoration: none;
+}
+.player h3 {
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease-in;
+}
+.player h3:hover {
+    border-bottom: 3px solid #562EFF;
+}
+hr {
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease;
+    margin: 30px 0;
+}
+.top_players:hover hr {
+    border-bottom: 2px solid #562EFF;
+}
+/* --------------------------- NOTE top player section end --------------------------- */
+
+
+/* -------------------------------- NOTE top blogs start ------------------------------- */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 26px;
+    grid-row-gap: 26px;
+}
+.blog {
+    display: flex;
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 3%);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.blog:hover {
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 7%);
+}
+
+.blog_img {
+    height: 117px;
+}
+.blog_img img {
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+    overflow: hidden;
+    transition: transform .4s ease;
+}
+.blog:hover  .blog_img img {
+    transform: scale(.9) rotate(-1deg);
+}
+.blog_info h3 {
+    font-size: 20px;
+    width: 170px;
+    margin: 0 0 6px;
+}
+#custom_width {
+    width: 197px;
+}
+.blog_info a {
+    color: #9F9F9F;
+    font-size: 16px;
+    text-decoration: none;
+}
+.blog_info a span {
+    color: #562EFF;
+}
+/* -------------------------------- NOTE top blogs end ------------------------------- */
+
+
+/* -------------------------------- NOTE latest course start ------------------------------- */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23.61px;
+}
+.course {
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 9%);
+    border-radius: 16px;
+    transition: transform .4s ease-in-out;
+}
+.course:hover {
+    transform: scale(.95);
+}
+.course_img img {
+    width: 100%;
+    height: auto;
+}
+
+.course_details {
+    padding: 0 12px 21.37px;
+}
+.course_details h2 {
+    margin: 0 0 7px;
+    font-size: 20.03px;
+}
+.course_details p {
+    margin: 0 0 16.57px;
+    color: #ED6B4F;
+}
+
+.course_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#half_rating {
+    color: #AEAEAE;
+    opacity: .7;
+}
+.course_rating i {
+    color: #FFC014;
+    font-size: 14px;
+    transition: transform .4s ease-in-out;
+}
+.course:hover .course_rating i {
+    transform: scale(1.5) rotate(360deg);
+}
+.course_rating span {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #1E1E1E;
+}
+
+.course_duration {
+    background-color: #FFE4E8;
+    padding: 3px 10px;
+    border-radius: 25px;
+}
+.course_duration i {
+    transition: transform .4s ease, all .4s ease;
+}
+.course:hover .course_duration i {
+    transform: scale(1.5) rotate(360deg);
+    color: #562EFF;
+}
+.course_duration i, span {
+    font-size: 14px;
+    color: #FF4A60;
+}
+.btn_button {
+    background-color: #562EFF;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.course:hover .btn_button {
+    background-color: #FF4A60;
+}
+.btn_button button {
+    color: #ffffff;
+    background-color: #562EFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform .4s ease-in-out, all .4s ease;
+}
+.course:hover .btn_button button {
+    transform: scale(1.31)
+}
+.course:hover .btn_button button {
+    background-color: #FF4A60;
+}
+/* -------------------------------- NOTE latest course end ------------------------------- */
+
+/* ---------------------------- NOTE footer start --------------------------- */
+footer {
+    background-color: #FF4A60;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer_details {
+    width: 870px;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer_details p {
+    margin: 0;
+    color: #ffffff;
+}
+/* ---------------------------- NOTE footer end --------------------------- */
+
+/* ---------------------------- NOTE media query start ---------------------------- */
+
+/* mobile 480p start */
+@media screen and (max-width: 688px) {
+
+    header {
+        padding: 10px 0 0 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_right ul {
+        justify-content: center;
+    }
+
+
+    .container {
+        width: 90%;
+    }
+    .players, .courses  {
+        grid-template-columns: 1fr;
+    }
+    
+
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+    .blog {
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .blog_img {
+        height: auto;
+    }
+    .blog_img img {
+        width: 100%;
+        height: auto;
+    }
+    .blog_info {
+        margin: 0 auto;
+        padding: 0 0 20px;
+    }
+    .blog_info h3 {
+        width: 100%;
+    }
+    #custom_width {
+        width: 100%;
+    }
+
+    .courses {
+        grid-row-gap: 25px;
+    }
+
+    .footer_details p {
+        font-size: 14px;
+    }
+
+  }
+/* mobile 480p end */
+/* ---------------------------- NOTE media query end ---------------------------- */
